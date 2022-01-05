@@ -20,3 +20,11 @@ container.addEventListener('mouseleave', () => {
   // Reset Animation
   pokemon.style.transform = 'translateZ(0px)';
 });
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter' && input.value != '') {
+    e.preventDefault();
+    id = input.value.toLowerCase();
+    apiPokemon(id); // Sending id of pokemon to api
+    input.value = '';
+  }
+});
