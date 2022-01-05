@@ -5,6 +5,7 @@ const title = document.querySelector('.title'); // title with name of pokemon
 const url = 'https://pokeapi.co/api/v2/pokemon/'; // api for pokemons
 const input = document.querySelector('.input_poke'); // input to search pokemons
 const errorBox = document.querySelector('.info');
+let id;
 
 // Pokemon Img
 const pokemon = document.querySelector('.pokemon img'); // img from pokemon
@@ -21,11 +22,15 @@ container.addEventListener('mouseleave', () => {
   // Reset Animation
   pokemon.style.transform = 'translateZ(0px)';
 });
+function changeName(poke) {
+  title.textContent = poke.name;
+}
 // Cathing Poke Api
 async function apiPokemon() {
   try {
     const response = await fetch(`${url}${id}`);
     const poke = await response.json();
+    changeName(poke);
   } catch (error) {
     const errorMsg = document.createElement('div');
     errorBox.appendChild(errorMsg);
