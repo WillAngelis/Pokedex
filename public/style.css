@@ -166,4 +166,5 @@ input::selection {
   width: 300px;
   border-radius: 5px;
   background: var(--main-bg-color);
+  transition: all ease-in-out 500ms;
 }
