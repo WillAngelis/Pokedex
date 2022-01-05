@@ -20,6 +20,21 @@ container.addEventListener('mouseleave', () => {
   // Reset Animation
   pokemon.style.transform = 'translateZ(0px)';
 });
+// Cathing Poke Api
+async function apiPokemon() {
+  try {
+    const response = await fetch(`${url}${id}`);
+    const poke = await response.json();
+  } catch (error) {
+    const errorMsg = document.createElement('div');
+    errorBox.appendChild(errorMsg);
+    errorMsg.classList.add('invalid');
+    errorMsg.textContent = 'Pokemon Not Found try again';
+    setTimeout(() => {
+      errorMsg.remove(); // Waiting 1500ms to remove error message
+    }, 1500);
+  }
+}
 input.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && input.value != '') {
     e.preventDefault();
