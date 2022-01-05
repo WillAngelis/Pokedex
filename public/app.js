@@ -34,6 +34,16 @@ function changeType(poke) {
   type.textContent = poke.types[0].type.name;
   const typePoke = type.textContent;
 }
+function changeStats(poke) {
+  const div = document.querySelectorAll('section div');
+  Object.keys(poke.stats).forEach((key) => {
+    const statsPoke = ((poke.stats[key]));
+    const width = (`${statsPoke.base_stat}px`);
+    Object.keys(div).forEach((stat) => {
+      div[stat].style.width = width;
+    });
+  });
+}
 // Cathing Poke Api
 async function apiPokemon() {
   try {
@@ -42,6 +52,7 @@ async function apiPokemon() {
     changeName(poke);
     changeImg(poke);
     changeType(poke);
+    changeStats(poke);
   } catch (error) {
     const errorMsg = document.createElement('div');
     errorBox.appendChild(errorMsg);
