@@ -4,6 +4,7 @@ const container = document.querySelector('.container');
 const title = document.querySelector('.title'); // title with name of pokemon
 const url = 'https://pokeapi.co/api/v2/pokemon/'; // api for pokemons
 const input = document.querySelector('.input_poke'); // input to search pokemons
+const type = document.querySelector('.types'); // type of pokemons
 const errorBox = document.querySelector('.info');
 let id;
 
@@ -29,6 +30,10 @@ function changeName(poke) {
 function changeImg(poke) {
   pokeImg.src = poke.sprites.front_default;
 }
+function changeType(poke) {
+  type.textContent = poke.types[0].type.name;
+  const typePoke = type.textContent;
+}
 // Cathing Poke Api
 async function apiPokemon() {
   try {
@@ -36,6 +41,7 @@ async function apiPokemon() {
     const poke = await response.json();
     changeName(poke);
     changeImg(poke);
+    changeType(poke);
   } catch (error) {
     const errorMsg = document.createElement('div');
     errorBox.appendChild(errorMsg);
