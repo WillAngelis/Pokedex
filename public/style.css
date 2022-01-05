@@ -93,7 +93,11 @@ body {
   caret-color: var(--main-bg-color);
 }
 input::selection {
-  color: aquamarine;
+  color: var(--main-bg-color);
+}
+.input input::placeholder {
+  color: var(--main-bg-color);
+  opacity: 0.3;
 }
 .types {
   display: flex;
