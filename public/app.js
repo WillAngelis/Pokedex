@@ -1,10 +1,12 @@
 // Movement Animation to happen
 const card = document.querySelector('.card');
 const container = document.querySelector('.container');
+const title = document.querySelector('.title'); // title with name of pokemon
+const url = 'https://pokeapi.co/api/v2/pokemon/'; // api for pokemons
 const input = document.querySelector('.input'); // input to search pokemons
 
 // Pokemon Img
-const pokemon = document.querySelector('.pokemon img');
+const pokemon = document.querySelector('.pokemon img'); // img from pokemon
 
 // Moving Animation Event
 container.addEventListener('mousemove', (e) => {
