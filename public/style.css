@@ -82,15 +82,15 @@ body {
   width: 100%;
   margin-top: 10px;
   padding: 1rem 0rem;
-  background: #444;
-  border: none;
-  color: rgb(255, 255, 255);
+  background: none;
+  border: 2px solid var(--main-bg-color);
+  color: var(--main-bg-color);
   border-radius: 5px;
   font-weight: bold;
   outline: none;
   text-align: center;
   font-size: 1.2rem;
-  caret-color: aquamarine;
+  caret-color: var(--main-bg-color);
 }
 input::selection {
   color: aquamarine;
