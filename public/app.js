@@ -3,7 +3,8 @@ const card = document.querySelector('.card');
 const container = document.querySelector('.container');
 const title = document.querySelector('.title'); // title with name of pokemon
 const url = 'https://pokeapi.co/api/v2/pokemon/'; // api for pokemons
-const input = document.querySelector('.input'); // input to search pokemons
+const input = document.querySelector('.input_poke'); // input to search pokemons
+const errorBox = document.querySelector('.info');
 
 // Pokemon Img
 const pokemon = document.querySelector('.pokemon img'); // img from pokemon
