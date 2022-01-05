@@ -34,7 +34,7 @@ const pokeImg = document.querySelector('.pokeImg');
 
 // Moving Animation Event
 container.addEventListener('mousemove', (e) => {
-  const xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+  const xAxis = (window.innerWidth / 2 - e.pageX) / 30;
   pokemon.style.transform = `scale(1.1) rotateX(${xAxis}deg)`;
 });
 
