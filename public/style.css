@@ -23,7 +23,7 @@ body {
   transform: scale(1.2);
 }
 .container {
-  width: 80rem;
+  width: 80%;
   background: rgba(22, 22, 22, 1);
   display: flex;
   justify-content: space-around;
@@ -54,13 +54,8 @@ body {
 }
 
 .circle {
-  width: 20rem;
-  height: 20rem;
-  background: linear-gradient(
-    to left,
-    rgba(29, 233, 240, 0.75),
-    rgba(35, 185, 255, 0.75)
-  );
+  width: 12rem;
+  height: 12rem;
   position: absolute;
   box-shadow: 0 10px 10px rgba(9, 145, 187, 0.2),
     0px 0px 50px rgba(32, 240, 240, 0.2);
