@@ -8,6 +8,26 @@ const type = document.querySelector('.types'); // type of pokemons
 const errorBox = document.querySelector('.info');
 let id;
 
+const color = {
+  fire: '#FF4B2B',
+  electric: '#f8e323',
+  normal: '#e2e2e2',
+  dragon: '#4568DC',
+  ghost: '#7F00FF',
+  ice: '#82f0f2',
+  grass: '#38ef7d',
+  poison: '#f749b1',
+  bug: '#a8ff78',
+  dark: '#434343',
+  psychic: '#ee9ca7',
+  steel: '#D3CCE3',
+  ground: '#9a8478',
+  water: '#1CB5E0',
+  fighting: '#EB5757',
+  rock: '#3C3B3F',
+  flying: '#FFEDBC',
+  fairy: '#FFAFBD',
+};
 // Pokemon Img
 const pokemon = document.querySelector('.pokemon img'); // img from pokemon
 const pokeImg = document.querySelector('.pokeImg');
@@ -33,6 +53,7 @@ function changeImg(poke) {
 function changeType(poke) {
   type.textContent = poke.types[0].type.name;
   const typePoke = type.textContent;
+  document.body.style.setProperty('--main-bg-color', color[typePoke]); // Change colors based on pokemon type
 }
 function changeStats(poke) {
   const div = document.querySelectorAll('section div');
