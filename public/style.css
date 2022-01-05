@@ -68,15 +68,18 @@ body {
 }
 .info h1 {
   font-size: 3rem;
-  color: white;
-  text-transform:capitalize;
+  text-transform: uppercase;
   text-align: center;
 }
 .info h3 {
   font-size: 2rem;
   padding: 1rem 0rem;
-  color: aquamarine;
   font-weight: lighter;
+}
+.info h3,
+.info h1,
+.info-stats {
+  color: var(--main-bg-color);
 }
 .input input {
   width: 100%;
