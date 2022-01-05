@@ -113,7 +113,7 @@ input::selection {
   border-radius: 5px;
 }
 
-.info-stats{
+.info-stats {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,10 +124,11 @@ input::selection {
   justify-content: space-around;
   font-weight: lighter;
 }
-.info-stats h3{
+.info-stats .stats {
   margin-bottom: 20px;
   padding: 10px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .card-stats {
   min-height: 50vh;
