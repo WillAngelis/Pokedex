@@ -9,6 +9,7 @@ let id;
 
 // Pokemon Img
 const pokemon = document.querySelector('.pokemon img'); // img from pokemon
+const pokeImg = document.querySelector('.pokeImg');
 
 // Moving Animation Event
 container.addEventListener('mousemove', (e) => {
@@ -25,12 +26,16 @@ container.addEventListener('mouseleave', () => {
 function changeName(poke) {
   title.textContent = poke.name;
 }
+function changeImg(poke) {
+  pokeImg.src = poke.sprites.front_default;
+}
 // Cathing Poke Api
 async function apiPokemon() {
   try {
     const response = await fetch(`${url}${id}`);
     const poke = await response.json();
     changeName(poke);
+    changeImg(poke);
   } catch (error) {
     const errorMsg = document.createElement('div');
     errorBox.appendChild(errorMsg);
