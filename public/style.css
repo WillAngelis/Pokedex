@@ -109,9 +109,10 @@ input::selection {
   font-size: 0.9rem;
   color: rgb(10, 10, 10);
   text-align: center;
-  background: aquamarine;
+  background: var(--main-bg-color);
   width: 100px;
   height: 40px;
+  text-transform: uppercase;
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -121,7 +122,6 @@ input::selection {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem 0rem;
-  color: aquamarine;
   height: 100%;
   align-content: space-around;
   justify-content: space-around;
