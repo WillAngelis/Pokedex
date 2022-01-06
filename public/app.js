@@ -4,8 +4,7 @@ const container = document.querySelector('.container');
 const title = document.querySelector('.title'); // title with name of pokemon
 const url = 'https://pokeapi.co/api/v2/pokemon/'; // api for pokemons
 const input = document.querySelector('.input_poke'); // input to search pokemons
-const type = document.querySelector('.types'); // type of pokemons
-const errorBox = document.querySelector('.info');
+const box = document.querySelector('.info');
 let id;
 
 const color = {
@@ -76,7 +75,7 @@ async function apiPokemon() {
     changeStats(poke);
   } catch (error) {
     const errorMsg = document.createElement('div');
-    errorBox.appendChild(errorMsg);
+    box.appendChild(errorMsg);
     errorMsg.classList.add('invalid');
     errorMsg.textContent = 'Pokemon Not Found try again';
     setTimeout(() => {
