@@ -109,3 +109,11 @@ function typePoke(poke) {
     changeColor(firstType, secondType);
   }
 }
+function changeType(firstType) {
+  typeTwo.classList.add('hide');
+  type.textContent = firstType;
+}
+function changeType2(secondType) {
+  typeTwo.classList.remove('hide');
+  typeTwo.textContent = secondType;
+}
