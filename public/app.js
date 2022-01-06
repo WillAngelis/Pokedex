@@ -114,3 +114,8 @@ function changeType2(secondType) {
   typeTwo.classList.remove('hide');
   typeTwo.textContent = secondType;
 }
+function getRandomIntInclusive(min, max) {
+  const numberMin = Math.ceil(min);
+  const numberMax = Math.floor(max);
+  return Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin;
+}
