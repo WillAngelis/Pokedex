@@ -119,3 +119,18 @@ function getRandomIntInclusive(min, max) {
   const numberMax = Math.floor(max);
   return Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin;
 }
+
+function changeColor(firstType, secondType) {
+  const random = getRandomIntInclusive(1, 2);
+  if (secondType === undefined) {
+    type.style = '';
+    document.body.style.setProperty('--main-bg-color', color[firstType]); // Change colors based on pokemon type
+  } else if (secondType !== undefined && random === 1) {
+    typeTwo.style.background = color[secondType];
+    document.body.style.setProperty('--main-bg-color', color[firstType]);
+  } else {
+    type.style.background = color[firstType];
+    typeTwo.style = '';
+    document.body.style.setProperty('--main-bg-color', color[secondType]);
+  }
+}
