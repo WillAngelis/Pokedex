@@ -4,6 +4,8 @@ const container = document.querySelector('.container');
 const title = document.querySelector('.title'); // title with name of pokemon
 const url = 'https://pokeapi.co/api/v2/pokemon/'; // api for pokemons
 const input = document.querySelector('.input_poke'); // input to search pokemons
+const type = document.querySelector('.typeOne'); // type of pokemons
+const typeTwo = document.querySelector('.typeTwo');
 const box = document.querySelector('.info');
 let id;
 
@@ -73,6 +75,7 @@ async function apiPokemon() {
     changeImg(poke);
     changeType(poke);
     changeStats(poke);
+    typePoke(poke);
   } catch (error) {
     const errorMsg = document.createElement('div');
     box.appendChild(errorMsg);
@@ -91,3 +94,18 @@ input.addEventListener('keypress', (e) => {
     input.value = '';
   }
 });
+function typePoke(poke) {
+  const [firstPokeType, secondPokeType] = poke.types;
+  const { type: type1 } = firstPokeType;
+  const firstType = type1.name;
+  if (secondPokeType === undefined) {
+    changeType(firstType);
+    changeColor(firstType);
+  } else {
+    const { type: type2 } = secondPokeType;
+    const secondType = type2.name;
+    changeType(firstType);
+    changeType2(secondType);
+    changeColor(firstType, secondType);
+  }
+}
