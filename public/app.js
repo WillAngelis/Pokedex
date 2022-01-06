@@ -51,11 +51,6 @@ function changeName(poke) {
 function changeImg(poke) {
   pokeImg.src = poke.sprites.front_default;
 }
-function changeType(poke) {
-  type.textContent = poke.types[0].type.name;
-  const typePoke = type.textContent;
-  document.body.style.setProperty('--main-bg-color', color[typePoke]); // Change colors based on pokemon type
-}
 function changeStats(poke) {
   const div = document.querySelectorAll('.stats-bar'); // Select all divs with in bar
   poke.stats.forEach((value, key) => {
@@ -70,7 +65,6 @@ async function apiPokemon() {
     const poke = await response.json();
     changeName(poke);
     changeImg(poke);
-    changeType(poke);
     changeStats(poke);
     typePoke(poke);
   } catch (error) {
@@ -84,7 +78,7 @@ async function apiPokemon() {
   }
 }
 input.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter' && input.value != '') {
+  if (e.key === 'Enter' && input.value !== '') {
     e.preventDefault();
     id = input.value.toLowerCase();
     apiPokemon(id); // Sending id of pokemon to api
