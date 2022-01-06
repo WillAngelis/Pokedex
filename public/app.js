@@ -57,13 +57,10 @@ function changeType(poke) {
   document.body.style.setProperty('--main-bg-color', color[typePoke]); // Change colors based on pokemon type
 }
 function changeStats(poke) {
-  const div = document.querySelectorAll('section div');
-  Object.keys(poke.stats).forEach((key) => {
-    const statsPoke = ((poke.stats[key]));
-    const width = (`${statsPoke.base_stat}px`);
-    Object.keys(div).forEach((stat) => {
-      div[stat].style.width = width;
-    });
+  const div = document.querySelectorAll('.stats-bar'); // Select all divs with in bar
+  poke.stats.forEach((value, key) => {
+    const width = value.base_stat;
+    div[key].style.width = `${width}px`;
   });
 }
 // Cathing Poke Api
