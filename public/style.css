@@ -242,7 +242,6 @@ input::selection {
   width: 200px;
   margin-top: 10px;
 }
-
 /* Mobile  */
 
 @media (max-width: 900px) {
@@ -299,7 +298,7 @@ input::selection {
     border-radius: 10px;
     display: inline;
   }
-  .search{
+  .search {
     margin-bottom: 40px;
   }
   .info {
