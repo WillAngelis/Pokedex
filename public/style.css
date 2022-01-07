@@ -194,6 +194,22 @@ input::selection {
 .showPokemon {
   display: none;
 }
+/* Search Button */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.search {
+  padding: 10px 20px;
+  font-weight: bold;
+  background: var(--main-bg-color);
+  border: none;
+  display: inline;
+  width: 200px;
+  margin-bottom: 40px;
+}
 
 /* Mobile  */
 
