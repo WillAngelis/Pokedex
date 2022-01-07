@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -208,7 +208,7 @@ input::selection {
   border: none;
   display: inline;
   width: 200px;
-  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 /* Mobile  */
@@ -266,6 +266,9 @@ input::selection {
     background: none;
     border-radius: 10px;
     display: inline;
+  }
+  .search{
+    margin-bottom: 40px;
   }
   .info {
     display: flex;
