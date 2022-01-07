@@ -128,3 +128,21 @@ function changeColor(firstType, secondType) {
     document.body.style.setProperty('--main-bg-color', color[secondType]);
   }
 }
+
+const cardStats = document.querySelector('.card-stats');
+const showStats = document.querySelector('.showStats'); // Getting button to show stats section
+const showPoke = document.querySelector('.showPokemon'); // Getting button to show search Pokemon section
+showStats.addEventListener('click', (e) => {
+  e.preventDefault();
+  card.classList.toggle('cardHide'); // hide search pokemon section
+  card.classList.toggle('animate');
+  cardStats.classList.toggle('card-statsShow'); // show stats section
+  cardStats.classList.toggle('animate2');
+});
+showPoke.addEventListener('click', (e) => {
+  e.preventDefault();
+  cardStats.classList.toggle('animate2');
+  card.classList.toggle('animate');
+  cardStats.classList.toggle('card-statsShow'); // hide section stats
+  card.classList.toggle('cardHide'); // show search pokemon section
+});
