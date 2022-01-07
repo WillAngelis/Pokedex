@@ -7,6 +7,7 @@ const input = document.querySelector('.input_poke'); // input to search pokemons
 const type = document.querySelector('.typeOne'); // type of pokemons
 const typeTwo = document.querySelector('.typeTwo');
 const box = document.querySelector('.info');
+const search = document.querySelector('.search');
 let id;
 
 const color = {
@@ -79,6 +80,14 @@ async function apiPokemon() {
 }
 input.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && input.value !== '') {
+    e.preventDefault();
+    id = input.value.toLowerCase();
+    apiPokemon(id); // Sending id of pokemon to api
+    input.value = '';
+  }
+});
+search.addEventListener('click', (e) => {
+  if (input.value !== '') {
     e.preventDefault();
     id = input.value.toLowerCase();
     apiPokemon(id); // Sending id of pokemon to api
