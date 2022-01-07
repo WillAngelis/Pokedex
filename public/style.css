@@ -154,7 +154,6 @@ input::selection {
 }
 .info-stats .stats {
   margin-bottom: 20px;
-  padding: 10px;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -225,6 +224,7 @@ input::selection {
 .showStats,
 .showPokemon {
   display: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 /* Search Button */
 .buttons {
