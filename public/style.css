@@ -18,7 +18,7 @@ body {
   perspective: 1000px;
 }
 .logo {
-  width: 400px;
+  width: 18.75rem;
   margin: auto;
   padding: 20px;
   transition: all ease-in 300ms;
@@ -66,7 +66,7 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
-.info h1 {
+.title {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
