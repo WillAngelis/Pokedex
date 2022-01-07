@@ -57,6 +57,7 @@ function changeStats(poke) {
   poke.stats.forEach((value, key) => {
     const width = value.base_stat;
     div[key].style.width = `${width}px`;
+    div[key].textContent = width;
   });
 }
 // Cathing Poke Api
