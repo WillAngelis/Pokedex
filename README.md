@@ -9,7 +9,7 @@ Projeto foi feito para aprendizado do consumo de uma API e animações
 
 ## Tela Inicial Mobile
 
-![Screenshot](./readme/img/initMobile.png)
+<img src="./readme/img/initMobile.png" width="200" height="200" />
 
 O site está hospedado na vercel e você pode acessa-lo por este link https://web-pokedex.vercel.app/
 
@@ -43,13 +43,9 @@ Caso o pokemon não exista ou aconteça algum erro de digitação uma tela irá 
 
 ### Mobile
 
-Na versão mobile a tela de busca fica dessa forma
+Na versão mobile ao clicar no botão Show Stats a tela de estatísticas do pokemon aparece
 
-![Screenshot](./readme/img/initMobile.png)
-
-Ao clicar no botão Show Stats a tela de estatísticas do pokemon aparece
-
-![Screenshot](./readme/img/searchMobile.png)
+![Screenshot](./readme/img/searchMobile.gif)
 
 ![Screenshot](./readme/img/statsMobile.png)
 
