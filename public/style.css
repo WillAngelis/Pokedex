@@ -187,3 +187,11 @@ input::selection {
     display: flex;
   }
 }
+
+/*  Buttons to animate */
+/* Hide and show sections */
+.showStats,
+.showPokemon {
+  display: none;
+}
+
