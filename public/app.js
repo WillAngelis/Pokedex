@@ -64,6 +64,7 @@ async function apiPokemon() {
   try {
     const response = await fetch(`${url}${id}`);
     const poke = await response.json();
+    card.classList.toggle('animate');
     changeName(poke);
     changeImg(poke);
     changeStats(poke);
@@ -79,6 +80,7 @@ async function apiPokemon() {
   }
 }
 input.addEventListener('keypress', (e) => {
+  card.classList.remove('animate');
   if (e.key === 'Enter' && input.value !== '') {
     e.preventDefault();
     id = input.value.toLowerCase();
@@ -87,6 +89,7 @@ input.addEventListener('keypress', (e) => {
   }
 });
 search.addEventListener('click', (e) => {
+  card.classList.remove('animate');
   if (input.value !== '') {
     e.preventDefault();
     id = input.value.toLowerCase();
