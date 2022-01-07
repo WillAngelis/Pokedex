@@ -326,15 +326,9 @@ input::selection {
     display: flex;
   }
   .stats-bar {
-    width: 100px;
+    width: 200px;
+    font-size: 16px;
   }
-  .stats {
-    display: flex;
-  }
-  .stats span {
-    font-size: 14px;
-  }
-
   .animate {
     animation: slide 0.6s ease forwards;
   }
