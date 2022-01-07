@@ -160,7 +160,7 @@ input::selection {
 }
 .card-stats {
   min-height: 50vh;
-  width: 35rem;
+  width: 25rem;
   padding: 0em 2rem;
   display: flex;
   flex-direction: column;
