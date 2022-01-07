@@ -9,7 +9,7 @@ Projeto foi feito para aprendizado do consumo de uma API e animações
 
 ## Tela Inicial Mobile
 
-<img src="./readme/img/initMobile.png" width="200" height="200" />
+<img src="./readme/img/initMobile.png" width="200" height="400" />
 
 O site está hospedado na vercel e você pode acessa-lo por este link https://web-pokedex.vercel.app/
 
@@ -47,7 +47,7 @@ Na versão mobile ao clicar no botão Show Stats a tela de estatísticas do poke
 
 ![Screenshot](./readme/img/searchMobile.gif)
 
-![Screenshot](./readme/img/statsMobile.png)
+<img src="./readme/img/statsMobile.png" width="200" height="400" />
 
 ### Animações
 
