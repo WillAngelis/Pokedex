@@ -175,6 +175,25 @@ input::selection {
   font-size: 1.2em;
   text-align: center;
 }
+.hp {
+  background: linear-gradient(to left, #11998e, #38ef7d);
+}
+.atk {
+  background: linear-gradient(to right, #d31027, #ea384d);
+}
+.def {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+.spdef {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+.spatk {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+.speed {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
 @keyframes slide {
   from {
     opacity: 0;
