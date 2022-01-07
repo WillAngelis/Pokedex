@@ -216,6 +216,9 @@ input::selection {
     display: flex;
   }
 }
+.animate {
+  animation: slide 0.6s ease forwards;
+}
 
 /*  Buttons to animate */
 /* Hide and show sections */
