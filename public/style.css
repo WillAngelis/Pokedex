@@ -245,8 +245,9 @@ input::selection {
     padding: 10px 20px;
     margin: 0 auto;
     font-weight: bold;
-    background: var(--main-bg-color);
-    border: none;
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-bg-color);
+    background: none;
     border-radius: 10px;
     display: inline;
   }
