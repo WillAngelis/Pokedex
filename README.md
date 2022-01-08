@@ -1,7 +1,6 @@
 # Pokedex
 
-Uma pokedex traz além do pokemon suas estatísticas
-Projeto foi feito para aprendizado do consumo de uma API e animações
+Uma pokedex que traz além do pokemon busacado as suas estatísticas. Projeto foi feito para aprendizado do consumo de uma API e animações css
 
 ## Tela Inicial Web
 
@@ -62,4 +61,3 @@ de estatísticas.
 - Possui responsividade
 - Animações no mobile e desktop
 - Mudança de cores de acordo com o Pokemon buscado
-- Salva o tempo registrado no cronômetro
